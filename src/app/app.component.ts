@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { UserServiceProvider } from '../providers/user-service/user-service';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +17,8 @@ export class MyApp {
   constructor(
     platform: Platform, 
     statusBar: StatusBar,
-    splashScreen: SplashScreen
+    splashScreen: SplashScreen,
+    public userService:UserServiceProvider
   ) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -28,8 +30,8 @@ export class MyApp {
 
   logout(){
     console.log("Logging out");
-    //TODO: service logout
-
+    // service logout
+    this.userService.logout();
     //Navigating to LoginPage
     this.nav.setRoot(LoginPage);
   }

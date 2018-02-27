@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage, App } from 'ionic-angular';
+import { NavController, IonicPage, App, MenuController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 
 import { StoreDetailPage } from '../store-detail/store-detail';
@@ -16,9 +16,11 @@ export class HomePage {
   constructor(
     public navCtrl: NavController, 
     public storeProvider:StoreProvider,
-    public app:App
+    public app:App,
+    private menuCtrl:MenuController
   ) 
   {
+    menuCtrl.enable(true);
     this.stores= storeProvider.getAll();
   }
 

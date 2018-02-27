@@ -19,12 +19,12 @@ import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 
 var config = {
-  apiKey: "AIzaSyCfORbG__nTUiaIFkL6_55XKWNZSC5zCck",
-  authDomain: "mobiele-c06a4.firebaseapp.com",
-  databaseURL: "https://mobiele-c06a4.firebaseio.com",
-  projectId: "mobiele-c06a4",
-  storageBucket: "mobiele-c06a4.appspot.com",
-  messagingSenderId: "1030775454063"
+  apiKey: "AIzaSyBTe_xUBV4Tv0I3Cqfo7e6pTZguH4yuq_Q",
+  authDomain: "c07les.firebaseapp.com",
+  databaseURL: "https://c07les.firebaseio.com",
+  projectId: "c07les",
+  storageBucket: "c07les.appspot.com",
+  messagingSenderId: "725600558397"
 };
 
 @NgModule({
