@@ -7,6 +7,7 @@
 </ion-header>
 
 <ion-content>
+  <button (click)="cancelOrder()">Cancel</button>
   <ion-list inset>
     <button ion-item *ngFor="let item of stores" (click)="showDetail(item)">
       {{ item.title }}
