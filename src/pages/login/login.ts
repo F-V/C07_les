@@ -34,7 +34,9 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-
+  loginWithGoogle(){
+    this.userService.loginWithGoogle();
+  }
   login() {
     console.log('Tried to login with.',this.user);
     this.userService.login(this.user.email, this.user.password)
